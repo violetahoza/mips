@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../mips.srcs/sources_1/new/execution_unit.vhd" \
+"../../../../mips.srcs/sources_1/new/instruction_decode.vhd" \
+"../../../../mips.srcs/sources_1/new/instruction_fetch.vhd" \
+"../../../../mips.srcs/sources_1/new/main_control.vhd" \
+"../../../../mips.srcs/sources_1/new/ram_memory.vhd" \
+"../../../../mips.srcs/sources_1/new/reg_file.vhd" \
+"../../../../mips.srcs/sources_1/new/test_env.vhd" \
+"../../../../mips.srcs/sources_1/new/test_bench.vhd" \
+
+# Do not sort compile order
+nosort

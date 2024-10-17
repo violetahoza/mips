@@ -1,0 +1,23 @@
+
+The implemented processor solves the problem of finding the greatest even number in a sequence of numbers. For this, we needed the following components: UC, IF, EX, ID, SSD, MPG, MEM. All of these are components used to create the complete architecture of the mips in the test_env file. The testing was conducted within a simulated environment.
+
+Determine the maximum even value from a sequence of N numbers stored in memory starting at address A. A and N are read from addresses 0 and 4, respectively.  The result will be written to memory at address 8.
+
+Instr0: lw $1, 0($0) // Load A from address 0 => 010_000_001_0000000
+Instr1: lw $2, 4($0) // Load N from address 4 => 010_000_010_0000100
+Instr2: xor $4, $4, $4 // Initialize the counter to 0 => 000_100_100_100_0_110
+Instr3: xor $5, $5, $5 // Initialize the max even number to 0 => 000_101_101_101_0_110
+Instr4: add $6, $0, $1 // Initialize address pointer to A => 000_000_001_110_0_110
+Instr5: beq $4, $2, end_loop  // Check if the counter has reached N => 100_010_100_0010001
+Instr6: lw $3, 0($6) // Load the next number from memory => 010_110_011_0000000
+Instr7: andi $7, $3, 1 // Check the least significant bit => 101_011_111_0000001
+Instr8: beq $7, $0, even // Branch if the number is even => 100_000_111_0001011
+Instr9: addi $4, $4, 1 // Increment counter => 001_100_100_0000001
+Instr10: jump 14 // go to the next address => 111_0000000001110
+Instr11: even: slt $7, $3, $5  // Check if the number is less than the current maximum => 000_011_101_111_0_111
+Instr12: beq $7, $0, max // Branch if the number is not less than the current maximum => 100_000_111_0001111
+Instr13: addi $4, $4, 1 // Increment counter => 001_100_100_0000001
+Instr14: add $6, $6, 4 // Move to the next address => 000_110_100_110_0_110
+Instr15: max: sw $3, 0($5)  // Store the current number as the new max => 011_101_011_0000000
+Instr16: jump Instr5   Jump back to the loop start => 111_0000000000101
+Instr17: end_loop:  sw $5, 8($0) // Write the max even number to memory at address 8 => 011_000_101_0001000

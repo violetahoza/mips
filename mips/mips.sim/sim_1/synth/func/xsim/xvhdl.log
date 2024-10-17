@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Violeta/Desktop/mips-16bits/mips/mips.sim/sim_1/synth/func/xsim/test_env_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SSD'
+INFO: [VRFC 10-3107] analyzing entity 'execUnit'
+INFO: [VRFC 10-3107] analyzing entity 'mpg'
+INFO: [VRFC 10-3107] analyzing entity 'mpg_0'
+INFO: [VRFC 10-3107] analyzing entity 'ram'
+INFO: [VRFC 10-3107] analyzing entity 'reg_file'
+INFO: [VRFC 10-3107] analyzing entity 'IDUnit'
+INFO: [VRFC 10-3107] analyzing entity 'InstrFetch'
+INFO: [VRFC 10-3107] analyzing entity 'test_env'
