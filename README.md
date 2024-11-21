@@ -1,7 +1,7 @@
 # Greatest Even Number Finder Processor
 
 ## Description
-The Greatest Even Number Finder Processor is an implementation designed to solve the problem of identifying the greatest even number in a sequence of integers. This project utilizes a complete architecture based on the MIPS (Microprocessor without Interlocked Pipeline Stages) architecture, incorporating various components to create an efficient processing unit.
+The Greatest Even Number Finder Processor is an implementation designed to solve the problem of identifying the greatest even number in a sequence of integers. This project utilizes a complete architecture based on the MIPS (Microprocessor without Interlocked Pipeline Stages) architecture, incorporating various components to create an efficient processing unit. Additionally, the project includes a hardware implementation of the MIPS 32-bit architecture using VHDL, featuring both single-cycle and pipelined processor variants.
 
 ## Components
 The processor architecture consists of the following components:
@@ -13,14 +13,18 @@ The processor architecture consists of the following components:
 - **SSD (Seven Segment Display)**: Displays the greatest even number found in a user-friendly format.
 - **MPG (Debouncer)**: Ensures stable input signals by filtering out noise and preventing false triggering from rapid changes in input.
 
-## Testing Environment
-The testing and validation of the processor were conducted within a simulated environment using **Vivado**. This allowed for thorough testing of the architecture and its components, ensuring that the processor correctly identifies the greatest even number in a given sequence.
+## MIPS Processor Features
+- **Single-Cycle Processor**: Executes each instruction in a single clock cycle, offering simplicity in design, though less efficient for complex instructions.
+- **Pipelined Processor**: Implements a 5-stage pipeline (Fetch, Decode, Execute, Memory Access, Write Back) to enhance performance through instruction-level parallelism.
+- **Instruction Support**: Includes a wide range of operations such as ALU (Arithmetic Logic Unit) operations, memory access (load/store), and control flow instructions (branches and jumps).
+- **Comprehensive Operation Support**: Facilitates both arithmetic and logical operations as defined in the MIPS instruction set architecture.
 
-## Features
-- **Efficient Processing**: The architecture is designed to efficiently process sequences of numbers and find the greatest even number.
-- **MIPS Architecture Compliance**: Implements a complete MIPS architecture, making it suitable for educational purposes and further development.
-- **Simulated Testing**: Provides a controlled environment for testing and validating the functionality of the processor.
+## Testing Environment
+The testing and validation of both the Greatest Even Number Finder Processor and the MIPS32Processor were conducted within a simulated environment using **Vivado**. This allowed for thorough testing of the architecture and its components, ensuring that the processors correctly identify the greatest even number and execute MIPS instructions effectively.
 
 ## Technologies Used
 - MIPS Assembly Language
+- VHDL
+- MIPS Instruction Set Architecture
 - Vivado (for simulation and synthesis)
+- Test environment setup 
