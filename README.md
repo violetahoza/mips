@@ -1,7 +1,7 @@
 # Greatest Even Number Finder Processor
 
 ## Description
-The Greatest Even Number Finder Processor is an implementation designed to solve the problem of identifying the greatest even number in a sequence of integers. This project utilizes a complete architecture based on the MIPS (Microprocessor without Interlocked Pipeline Stages) architecture, incorporating various components to create an efficient processing unit. Additionally, the project includes a hardware implementation of the MIPS 32-bit architecture using VHDL, featuring both single-cycle and pipelined processor variants.
+The Greatest Even Number Finder Processor is an implementation designed to solve the problem of identifying the greatest even number in a sequence of integers. This project utilizes a complete architecture based on the MIPS (Microprocessor without Interlocked Pipeline Stages) architecture, incorporating various components to create an efficient processing unit. Additionally, the project includes a hardware implementation of the MIPS 16-bit architecture using VHDL, featuring both single-cycle and pipelined processor variants.
 
 ## Components
 The processor architecture consists of the following components:
@@ -20,7 +20,7 @@ The processor architecture consists of the following components:
 - **Comprehensive Operation Support**: Facilitates both arithmetic and logical operations as defined in the MIPS instruction set architecture.
 
 ## Testing Environment
-The testing and validation of both the Greatest Even Number Finder Processor and the MIPS32Processor were conducted within a simulated environment using **Vivado**. This allowed for thorough testing of the architecture and its components, ensuring that the processors correctly identify the greatest even number and execute MIPS instructions effectively.
+The testing and validation of both the Greatest Even Number Finder Processor and the MIPS 16-bit Processor were conducted within a simulated environment using **Vivado**. This allowed for thorough testing of the architecture and its components, ensuring that the processors correctly identify the greatest even number and execute MIPS instructions effectively.
 
 ## Technologies Used
 - MIPS Assembly Language
